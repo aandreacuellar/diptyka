@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>diptyka</title>
+<link href="css/estilo.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/media.css">
+<link href="css/s-inicio-registro.css">
+	<link href="img/favicon diptyka.svg" rel="icon" type="favicon-diptyka">
+	<link rel="stylesheet" href="https://use.typekit.net/wvo2wja.css">
+	<link href="css/s-inicio-registro.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/dfea0b4716.js" crossorigin="anonymous"></script>
+<meta name="viewport"
+	content="width=device-width,
+	initial-scale=1.0">
+</head>
+
+<body>
+<div id="contenedor-inico-registro">
+	<header> 
+		<nav class="header-box">
+			<a href="index.html"><img class="nav-logo" src="img/logo diptyka.svg" alt="Lodo tipográfico de diptyka"></a>
+			
+			<nav id="navmenu" class="navmenu">
+			<!--boton de cerrar hamburguesa-->
+			<button id="cerrarmenu" class="cerrarmenu">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
+				<ul id="menu-list">
+					<li class="menu-item">
+						<a href="sobre-diptyka.html" class="menu-link">Sobre diptyka</a>
+					</li>
+					<li class="menu-item">
+						<a href="historia.html" class="menu-link">Historia</a>
+					</li>
+					<li class="menu-item">
+						<a href="recursos.html" class="menu-link">Recursos</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div id="menu-iconos" class="menu-iconos">
+			<!--boton de búsqueda--> 
+				<div class="menu-link"><i class="fa-solid fa-magnifying-glass nav-serch" id="serch-button" ></i></div>
+			<!--inico de secion-->
+				<a href="inicio-registro.html" class="menu-link" >
+					<i class="fa-solid fa-user"></i>
+				</a>
+			<!--MENU hamburguesa-->
+				<button id="abrirmenu" class="abrirmenu">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</nav>
+  	</header>
+	<main id="inicio-registro">
+		<div class="form-box login">
+			<form action="">
+				<h1>Inicio</h1>
+				<div class="input-box">
+					<input type="text" placeholder="Usuario" required>
+					<i class="fa-solid fa-user"></i>
+				</div>
+				<div class="input-box">
+					<input type="contraseña" placeholder="Contraseña" required>
+					<i class="fa-solid fa-lock"></i>
+				</div>
+				<div class="forgot-link">
+					<a href="">Olvidaste tu contraseña?</a>
+				</div>
+				<button type="submit" class="btn">Inicio</button>
+				<p>or loing with social plataforms</p>
+				<div class="social-iconos">
+					<a href="#"><i class="fa-brands fa-google"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-github"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+			</form>
+		</div>
+		
+		<div class="form-box registro">
+			<form action="">
+				<h1>Registro</h1>
+				<div class="input-box">
+					<input type="text" placeholder="Usuario" required>
+					<i class="fa-solid fa-user"></i>
+				</div>
+				<div class="input-box">
+					<input type="correo" placeholder="Correo" required>
+					<i class="fa-solid fa-envelope"></i>
+				</div>
+				<div class="input-box">
+					<input type="contraseña" placeholder="Contraseña" required>
+					<i class="fa-solid fa-lock"></i>
+				</div>
+				<button type="submit" class="btn">Registrar</button>
+				<p>or registre with social plataforms</p>
+				<div class="social-iconos">
+					<a href="#"><i class="fa-brands fa-google"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-github"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+			</form>
+		</div>
+  	</main>
+</div> <!--contenedor-->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>	
+	<script type="text/javascript" src="java/java.js"></script>
+</body>
+</html>
