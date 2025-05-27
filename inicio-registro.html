@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>diptyka</title>
 <link href="css/estilo.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/media.css">
+<link href="css/media.css" rel="stylesheet">
 <link href="css/s-inicio-registro.css">
 	<link href="img/favicon diptyka.svg" rel="icon" type="favicon-diptyka">
 	<link rel="stylesheet" href="https://use.typekit.net/wvo2wja.css">
@@ -18,7 +18,7 @@
 <body>
 <div id="contenedor-inico-registro">
 	<header> 
-		<nav class="header-box">
+		<div class="header-box">
 			<a href="index.html"><img class="nav-logo" src="img/logo diptyka.svg" alt="Lodo tipográfico de diptyka"></a>
 			
 			<nav id="navmenu" class="navmenu">
@@ -41,17 +41,19 @@
 			
 			<div id="menu-iconos" class="menu-iconos">
 			<!--boton de búsqueda--> 
-				<div class="menu-link"><i class="fa-solid fa-magnifying-glass nav-serch" id="serch-button" ></i></div>
+				<div class="menu-link" id="menubusqueda">
+					<div id="botonbusqueda"><i class="fa-solid fa-magnifying-glass nav-serch" id="serch-button" ></i></div>
+				</div>
 			<!--inico de secion-->
 				<a href="inicio-registro.html" class="menu-link" >
-					<i class="fa-solid fa-user"></i>
+					<i class="fa-solid fa-user" id="menuseccion"></i> 
 				</a>
 			<!--MENU hamburguesa-->
 				<button id="abrirmenu" class="abrirmenu">
-					<i class="fa-solid fa-bars"></i>
+					<i class="fa-solid fa-bars" id="hamburgesamenu"></i>
 				</button>
 			</div>
-		</nav>
+		</div>
   	</header>
 	<main id="inicio-registro">
 		<div class="form-box login">

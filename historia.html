@@ -5,7 +5,7 @@
 <title>diptyka</title>
 <link href="css/estilo.css" rel="stylesheet" type="text/css">
 <link href="css/ssecciones.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/media.css">
+<link href="css/media.css" rel="stylesheet">
 	<link href="img/favicon diptyka.svg" rel="icon" type="favicon-diptyka">
 	<link rel="stylesheet" href="https://use.typekit.net/wvo2wja.css">
 	<script src="https://kit.fontawesome.com/dfea0b4716.js" crossorigin="anonymous"></script>
@@ -15,9 +15,9 @@
 </head>
 
 <body>
-<div id="contenedor">
+<div id="contenedor-historia">
 	<header> 
-		<nav class="header-box">
+		<div class="header-box">
 			<a href="index.html"><img class="nav-logo" src="img/logo diptyka.svg" alt="Lodo tipográfico de diptyka"></a>
 			
 			<nav id="navmenu" class="navmenu">
@@ -40,19 +40,21 @@
 			
 			<div id="menu-iconos" class="menu-iconos">
 			<!--boton de búsqueda--> 
-				<div class="menu-link"><i class="fa-solid fa-magnifying-glass nav-serch" id="serch-button" ></i></div>
+				<div class="menu-link" id="menubusqueda">
+					<div id="botonbusqueda"><i class="fa-solid fa-magnifying-glass nav-serch" id="serch-button" ></i></div>
+				</div>
 			<!--inico de secion-->
 				<a href="inicio-registro.html" class="menu-link" >
-					<i class="fa-solid fa-user"></i>
+					<i class="fa-solid fa-user" id="menuseccion"></i> 
 				</a>
 			<!--MENU hamburguesa-->
 				<button id="abrirmenu" class="abrirmenu">
-					<i class="fa-solid fa-bars"></i>
+					<i class="fa-solid fa-bars" id="hamburgesamenu"></i>
 				</button>
 			</div>
-		</nav>
+		</div>
   	</header>
-	<main id="contenedor-historia">
+	<main id="historia">
 	<div id="sobre-diptyka">
 		<h1>Sobre diptyka</h1>
 		<p>Diptyka es un proyecto multidisciplinar que investiga y comunica el diseño gráfico desde una mirada crítica, con énfasis en exponer el trabajo de las mujeres. Es un espacio donde convergen teoría y práctica para rescatar aportes silenciados y construir nuevas narrativas visuales.</p>
@@ -80,15 +82,27 @@
 		
 			
 		<ul id="footer-list">
-			<li><a href="privacidad">Política de privacidad.</a></li>
-			<li><a href="aviso-legal">Aviso legal.</a></li>
-			<li><a href="mapa-diptyka">Mapa del sitio.</a></li>
+			<li><a href="privacidad.html">Política de privacidad.</a></li>
+			<li><a href="aviso-legal.html">Aviso legal.</a></li>
+			<li><a href="mapa-diptyka.html">Mapa del sitio.</a></li>
 		</ul>
-		<ul id="redes-sociales">
-			<li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-			<li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-			<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-		</ul>
+		<div id="redes-sociales" class="redes-sociales">
+			<div id="icono-youtube" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+			<div id="icono-insta" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</div>
+			<div id="icono-facebook" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-tiktok"></i>
+				</a>
+			</div>
+		</div>
 	</div>
 	</footer>
 </div> <!--contenedor-->

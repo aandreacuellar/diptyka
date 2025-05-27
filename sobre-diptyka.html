@@ -15,9 +15,9 @@
 </head>
 
 <body>
-<div id="contenedor">
+<div id="contenedor-sobrediptyka">
 	<header> 
-		<nav class="header-box">
+		<div class="header-box">
 			<a href="index.html"><img class="nav-logo" src="img/logo diptyka.svg" alt="Lodo tipográfico de diptyka"></a>
 			
 			<nav id="navmenu" class="navmenu">
@@ -40,19 +40,21 @@
 			
 			<div id="menu-iconos" class="menu-iconos">
 			<!--boton de búsqueda--> 
-				<div class="menu-link"><i class="fa-solid fa-magnifying-glass nav-serch" id="serch-button" ></i></div>
+				<div class="menu-link" id="menubusqueda">
+					<div id="botonbusqueda"><i class="fa-solid fa-magnifying-glass nav-serch" id="serch-button" ></i></div>
+				</div>
 			<!--inico de secion-->
 				<a href="inicio-registro.html" class="menu-link" >
-					<i class="fa-solid fa-user"></i>
+					<i class="fa-solid fa-user" id="menuseccion"></i> 
 				</a>
 			<!--MENU hamburguesa-->
 				<button id="abrirmenu" class="abrirmenu">
-					<i class="fa-solid fa-bars"></i>
+					<i class="fa-solid fa-bars" id="hamburgesamenu"></i>
 				</button>
 			</div>
-		</nav>
+		</div>
   	</header>
-	<main id="contenedor-sobrediptyka">
+	<main id="sec-sobre-diptyka">
 		<div id="sobre-diptyka">
 			<h1>¿Qué es Diptyka?</h1>
 			<p>Diptyka es un proyecto multidisciplinar que investiga y comunica el diseño gráfico desde una mirada crítica, con énfasis en visibilizar el trabajo de las mujeres.</p>
@@ -65,36 +67,28 @@
 			<h1>Visión</h1>
 			<p>Ser una referencia clave en el ámbito del diseño gráfico crítico y feminista en Latinoamérica, consolidando una comunidad de diseñadoras que transforman la forma en que entendemos, enseñamos y practicamos el diseño. Aspiramos a reescribir la historia visual desde múltiples voces, conectando generaciones y territorios, y generando impacto cultural a través de la memoria, la creación y la colaboración.</p>
 		</div>
-		<div id="">
+		<div id="proposito">
 			<h1>Propósito</h1>
 			<p>Nace como una respuesta a la invisibilización de diseñadoras en la historia del diseño gráfico. Nuestro propósito es recuperar, amplificar y conectar las voces femeninas del diseño, creando una red de conocimiento y reconocimiento.</p>
 		</div>
-		<div id="">
+		<div id="enfoque">
 			<h1>Enfoque / Filosofía</h1>
 			<p>Desde una perspectiva interseccional y crítica, Diptyka combina teoría y práctica para construir nuevas narrativas visuales. Aquí convergen la investigación, la creación y el diálogo para cuestionar y reimaginar el diseño gráfico.</p>
 		</div>
-		<div id="">
+		<div id="objetivos">
 			<h1>Objetivos</h1>
 			<p>Recuperar memorias visuales y referentes silenciados.
 			Visibilizar el trabajo de diseñadoras emergentes.
 			Ofrecer recursos que impulsen la práctica crítica y creativa del diseño.
 			Generar comunidad y colaboración entre mujeres diseñadoras.</p>
 		</div>
-		<div id="">
+		<div id="publico">
 			<h1>A quién va dirigido</h1>
 			<p>Diseñadoras, estudiantes, investigadoras y personas interesadas en el diseño con enfoque feminista, crítico y contemporáneo.</p>
 		</div>
-		<div id="">
+		<div id="encuentra-proyecto">
 			<h1>Qué encontrarás en el proyecto</h1>
 			<p>En Diptyka encontrarás perfiles de nuevas diseñadoras, artículos y debates actuales, recursos para tu práctica profesional y una reconstrucción viva de la historia del diseño gráfico desde otras voces.</p>
-		</div>
-		<div id="">
-			<h1>Misión (versión corta)</h1>
-			<p>Diptyka visibiliza el diseño gráfico desde una mirada crítica y feminista, conectando generaciones de mujeres diseñadoras para transformar la historia visual.</p>
-		</div>
-		<div id="">
-			<h1>Visión (versión corta)</h1>
-			<p>Ser una plataforma de referencia en Latinoamérica que impulsa el diseño gráfico hecho por mujeres, reescribiendo el presente y el futuro del diseño.</p>
 		</div>
 		<div id="">
 			<h1></h1>
@@ -115,15 +109,27 @@
 		
 			
 		<ul id="footer-list">
-			<li><a href="privacidad">Política de privacidad.</a></li>
-			<li><a href="aviso-legal">Aviso legal.</a></li>
-			<li><a href="mapa-diptyka">Mapa del sitio.</a></li>
+			<li><a href="privacidad.html">Política de privacidad.</a></li>
+			<li><a href="aviso-legal.html">Aviso legal.</a></li>
+			<li><a href="mapa-diptyka.html">Mapa del sitio.</a></li>
 		</ul>
-		<ul id="redes-sociales">
-			<li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-			<li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-			<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-		</ul>
+		<div id="redes-sociales" class="redes-sociales">
+			<div id="icono-youtube" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+			<div id="icono-insta" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</div>
+			<div id="icono-facebook" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-tiktok"></i>
+				</a>
+			</div>
+		</div>
 	</div>
 	</footer>
 </div> <!--contenedor-->

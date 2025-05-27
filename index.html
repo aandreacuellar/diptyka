@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>diptyka</title>
 <link href="css/estilo.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/media.css">
-	<link href="img/favicon diptyka.svg" rel="icon" type="favicon-diptyka">
+<link href="css/media.css" rel="stylesheet" >
+	<link href="img/favicon diptyka.svg" rel="icon" type="image/svg+xml">
 	<link rel="stylesheet" href="https://use.typekit.net/wvo2wja.css">
 	<script src="https://kit.fontawesome.com/dfea0b4716.js" crossorigin="anonymous"></script>
 <meta name="viewport"
@@ -16,7 +16,7 @@
 <body>
 <div id="contenedor">
 	<header> 
-		<nav class="header-box">
+		<div class="header-box">
 			<a href="index.html"><img class="nav-logo" src="img/logo diptyka.svg" alt="Lodo tipográfico de diptyka"></a>
 			
 			<nav id="navmenu" class="navmenu">
@@ -51,12 +51,12 @@
 					<i class="fa-solid fa-bars" id="hamburgesamenu"></i>
 				</button>
 			</div>
-		</nav>
+		</div>
   	</header>
 	
 	<main>
 	<div id="main-sec">
-	  <h1>diptyka: Una exploración del diseno femenino</h1>
+	  <h1>Una exploración del diseno femenino</h1>
 		<img src="img/FOTO DIP_Mesa de trabajo 1.jpg" alt="" id="main-img">
 	</div>
 	<div id="sobre-diptyka">
@@ -86,15 +86,27 @@
 		
 			
 		<ul id="footer-list">
-			<li><a href="privacidad">Política de privacidad.</a></li>
-			<li><a href="aviso-legal">Aviso legal.</a></li>
-			<li><a href="mapa-diptyka">Mapa del sitio.</a></li>
+			<li><a href="privacidad.html">Política de privacidad.</a></li>
+			<li><a href="aviso-legal.html">Aviso legal.</a></li>
+			<li><a href="mapa-diptyka.html">Mapa del sitio.</a></li>
 		</ul>
-		<ul id="redes-sociales">
-			<li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-			<li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-			<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-		</ul>
+		<div id="redes-sociales" class="redes-sociales">
+			<div id="icono-youtube" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+			<div id="icono-insta" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</div>
+			<div id="icono-facebook" class="menu-link">
+				<a href="#">
+					<i class="fa-brands fa-tiktok"></i>
+				</a>
+			</div>
+		</div>
 	</div>
 	</footer>
 </div> <!--contenedor-->
