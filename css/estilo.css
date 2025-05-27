@@ -57,6 +57,7 @@ header {
     display: flex;
     gap: 20px;
     padding-right: 10px;
+	font-size: 1.3rem;
 }
 .menu-link{
 	color: #7350f2;
@@ -166,6 +167,7 @@ footer {
     margin-right: 1rem;
     justify-self: start;
     align-self: center;
+	text-align: center;
 	margin-top: 10px;
     padding: 10px;
     grid-area: 3 / 1 / 4 / 2;
@@ -191,7 +193,7 @@ footer {
 #redes-sociales a {
     color: #7350f2;
     transition: .5s;
-    font-size: 1.2rem; /* opcional para mejor visibilidad */
+    font-size: 1.2rem;
 }
 
 #redes-sociales a:hover {
