@@ -9,6 +9,26 @@
 html {
 	scroll-behavior: smooth;
 }
+h1{
+	font-family: salted, sans-serif;;
+	font-style: normal;
+	font-size: clamp(1.5rem, 6vw + 1rem, 4rem) ;
+}
+h2{
+	font-family: salted, sans-serif;;
+	font-style: normal;
+	font-size: clamp(1.3rem, 4vw + 1rem, 3rem) ;
+}
+h3{
+	font-family: salted, sans-serif;;
+	font-style: normal;
+	font-size: clamp(1rem, 3vw + 1rem, 2rem) ;
+}
+p{
+	font-family: omnes-pro, sans-serif;
+	font-style: normal;
+	font-size: 1.2rem;
+}
 #contenedor {
 	width: auto;
 	height: auto;
@@ -31,7 +51,7 @@ header {
 	display: flex;
 	margin: 10px;
 	padding: 10px;
-	border-radius: 25px;
+	border-radius: 10px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -79,6 +99,10 @@ header {
 
 
 /*MAIN INDEX*/
+.panel {
+  height: 100vh;
+  scroll-snap-align: start;
+}
 #contenedor main {
     display: grid;
     grid-template-columns: 1;
@@ -89,16 +113,14 @@ header {
 #main-sec {
 	position: relative;
 	text-align: center;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 	color: white;
-	padding: 150px 20px;
+	padding: 50px 20px;
 	margin-top: -10px;
 	background-color: rgba(0, 0, 0, 0.4);
 	grid-area: 1 / 1 / 2 / 2;
-}
-#main-sec h1 {
-	font-family: citrus-gothic, sans-serif;
-	font-size: 50px;
-	font-style: normal;
 }
 #main-img {
 	position: absolute;
@@ -114,7 +136,7 @@ header {
     position: relative;
     text-align: center;
     color: white;
-    padding: 150px 20px;
+    padding: 100px 20px;
     margin-top: -10px;
     background-color: #36a4d5;
 	grid-area: 2 / 1 / 3 / 2;
@@ -126,7 +148,7 @@ header {
     position: relative;
     text-align: center;
     color: white;
-    padding: 150px 50px;
+    padding: 100px 50px;
     margin-top: -10px;
     background-color: rgba(0,0,0,0.50);
     grid-area: 3 / 1 / 4 / 2;
@@ -167,16 +189,6 @@ main #historia #main-historial-img {
 }
 
 
-h1{
-	font-family: salted, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-p{
-	font-family: omnes-pro, sans-serif;
-	font-weight: 500;
-	font-style: normal;
-}
 
 
 /*footer*/

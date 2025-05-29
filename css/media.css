@@ -60,4 +60,41 @@
 		grid-area: 4 / 1 / 5 / 2;
 	}
 }
-	
+@media screen and (max-width: 800px){
+	#sec-disenadoras{
+		grid-template-columns: 1fr 1fr; 
+		grid-template-rows: auto auto auto; 
+	}
+	#disenadoras{
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	#juliana { 
+		grid-area: 2 / 1 / 3 / 2; 
+	}
+	#juliana img {
+		width: 60%;
+	}
+	#andrea { 
+		grid-area: 2 / 2 / 3 / 3; 
+	}
+	#andrea img {
+		width: 60%;
+	}
+	#laura { 
+		grid-area: 3 / 1 / 4 / 2; 
+	}
+	#laura img {
+		width: 60%;
+	}
+	#valentina { 
+		grid-area: 3 / 2 / 4 / 3; 
+	}
+	#valentina img{
+		width: 60%;
+	}
+}
+@media screen and (max-width: 600px){
+	p{
+		font-size: 1.1rem;
+	}
+}
