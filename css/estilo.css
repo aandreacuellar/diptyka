@@ -8,21 +8,31 @@
 }
 html {
 	scroll-behavior: smooth;
+	height: 100%;
+}
+body{
+	overflow-x: hidden;
+	height: 100%;
 }
 h1{
 	font-family: salted, sans-serif;;
 	font-style: normal;
-	font-size: clamp(1.5rem, 6vw + 1rem, 4rem) ;
+	font-size: clamp(1.5rem, 6vw + 1rem, 4rem);
 }
 h2{
 	font-family: salted, sans-serif;;
 	font-style: normal;
-	font-size: clamp(1.3rem, 4vw + 1rem, 3rem) ;
+	font-size: clamp(1.3rem, 4vw + 1rem, 3rem);
 }
 h3{
 	font-family: salted, sans-serif;;
 	font-style: normal;
-	font-size: clamp(1rem, 3vw + 1rem, 2rem) ;
+	font-size: clamp(1.1rem, 3vw + 1rem, 2rem);
+}
+h4{
+	font-family: salted, sans-serif;;
+	font-style: normal;
+	font-size: clamp(1rem, 2vw + 1rem, 1.5rem) ;
 }
 p{
 	font-family: omnes-pro, sans-serif;
