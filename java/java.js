@@ -1,17 +1,17 @@
 // JavaScript Document
-//*SHOW MENU*/
-const navmenu = document.querySelector("#navmenu");
-const abrirmenu = document.querySelector("#abrirmenu");
-const cerrarmenu = document.querySelector("#cerrarmenu");
 
-abrirmenu.addEventListener("click", () => {
-	navmenu.classList.add("visible");
-})
+// Menú
+    const navmenu = document.querySelector("#navmenu");
+    const abrirmenu = document.querySelector("#abrirmenu");
+    const cerrarmenu = document.querySelector("#cerrarmenu");
 
-cerrarmenu.addEventListener("click", () => {
-	navmenu.classList.remove("visible");
-})
+    abrirmenu.addEventListener("click", () => {
+      navmenu.classList.add("visible");
+    });
 
+    cerrarmenu.addEventListener("click", () => {
+      navmenu.classList.remove("visible");
+    });
 
 // TRANSICIÓN
 
@@ -48,3 +48,28 @@ ScrollTrigger.create({
     duration: 0.5
   }
 });
+
+// Scroll horizontal por sección
+    const secciones = document.querySelectorAll('.epoca');
+
+    secciones.forEach(epoca => {
+      const slider = epoca.querySelector('.slider');
+      let currentIndex = 0;
+      const totalSlides = slider.children.length;
+
+      epoca.addEventListener('wheel', (e) => {
+        if (Math.abs(e.deltaY) < 10) return; // evita scrolls suaves innecesarios
+        e.preventDefault();
+
+        if (e.deltaY > 0 && currentIndex < totalSlides - 1) {
+          currentIndex++;
+        } else if (e.deltaY < 0 && currentIndex > 0) {
+          currentIndex--;
+        } else {
+          return;
+        }
+
+        const offset = currentIndex * window.innerWidth;
+        slider.style.transform = `translateX(-${offset}px)`;
+      }, { passive: false });
+    });
