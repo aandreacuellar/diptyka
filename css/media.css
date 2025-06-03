@@ -234,6 +234,28 @@
 		width: 80%;
 		grid-area: 2 / 1 / 3 / 2;
 	}
+	.designer{
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+		gap: 10px;
+	}
+	.titulo-dise{
+		grid-area: 1 / 1 / 2 / 2;
+	}
+	.info-mujeres{
+		grid-area: 2 / 1 / 3 / 2;
+	}
+	.imagenes-mujeres{
+		grid-area: 3 / 1 / 4 / 2;
+	}
+	.img-mujer{
+		width: 70%;
+		object-position: center;
+	}
+	}
+	.obra-mujer{
+		width: 40%;
+	}
 }
 @media screen and (max-width: 600px){
 	p{
