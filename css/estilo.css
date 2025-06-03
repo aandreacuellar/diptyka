@@ -253,7 +253,8 @@ header {
     text-align: center;
 }
 #parrafo-recursos {
-	grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: left;
 }
 main #recursos img {
 	object-fit: cover;
