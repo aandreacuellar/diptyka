@@ -15,61 +15,37 @@
 
 // TRANSICIÓN
 
-gsap.registerPlugin(ScrollTrigger);
+<script>
+  const sections = document.querySelectorAll(".section");
+  let current = 0;
+  let isScrolling = false;
 
-let panels = gsap.utils.toArray(".panel");
-let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+  function scrollToSection(index) {
+    if (index < 0 || index >= sections.length) return;
+    isScrolling = true;
+    sections[index].scrollIntoView({ behavior: "smooth" });
+    current = index;
+    setTimeout(() => { isScrolling = false; }, 1000); // tiempo de bloqueo
+  }
 
-panels.forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
-    pin: true, 
-    pinSpacing: false 
+  window.addEventListener("wheel", (e) => {
+    const currentSection = sections[current];
+    const isScrollable = currentSection.classList.contains("scrollable");
+    const innerScroll = currentSection.querySelector(".inner-scroll");
+
+    if (isScrolling) return;
+
+    if (isScrollable && innerScroll) {
+      const atTop = innerScroll.scrollTop === 0;
+      const atBottom = innerScroll.scrollTop + innerScroll.clientHeight >= innerScroll.scrollHeight - 5;
+
+      if (e.deltaY > 0 && atBottom) {
+        scrollToSection(current + 1);
+      } else if (e.deltaY < 0 && atTop) {
+        scrollToSection(current - 1);
+      }
+    } else {
+      scrollToSection(e.deltaY > 0 ? current + 1 : current - 1);
+    }
   });
-});
-
-ScrollTrigger.create({
-  snap: {
-    snapTo: (progress, self) => {
-      let panelStarts = tops.map(st => st.start),
-          snapScroll = gsap.utils.snap(panelStarts, self.scroll());
-    },
-    duration: 0.5
-  }
-})
-ScrollTrigger.create({
-  snap: {
-    snapTo: (progress, self) => {
-      let panelStarts = tops.map(st => st.start),
-          snapScroll = gsap.utils.snap(panelStarts, self.scroll());
-      return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
-    },
-    duration: 0.5
-  }
-});
-
-// Scroll horizontal por sección
-    const secciones = document.querySelectorAll('.epoca');
-
-    secciones.forEach(epoca => {
-      const slider = epoca.querySelector('.slider');
-      let currentIndex = 0;
-      const totalSlides = slider.children.length;
-
-      epoca.addEventListener('wheel', (e) => {
-        if (Math.abs(e.deltaY) < 10) return; // evita scrolls suaves innecesarios
-        e.preventDefault();
-
-        if (e.deltaY > 0 && currentIndex < totalSlides - 1) {
-          currentIndex++;
-        } else if (e.deltaY < 0 && currentIndex > 0) {
-          currentIndex--;
-        } else {
-          return;
-        }
-
-        const offset = currentIndex * window.innerWidth;
-        slider.style.transform = `translateX(-${offset}px)`;
-      }, { passive: false });
-    });
+</script>
