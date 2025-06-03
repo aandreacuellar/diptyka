@@ -55,15 +55,14 @@ header {
     grid-area: 1 / 1 / 2 / 3;
 }
 .header-box {
-	background-color: #eecb00;
-	height: auto;
-	display: flex;
-	margin: 10px;
-	padding: 5px;
-	border-radius: 10px;
-	justify-content: space-between;
-	align-items: center;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: #eecb00;
+    height: auto;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 .nav-logo {
 	width: 180px;
@@ -141,30 +140,32 @@ header {
 	z-index: -1;
 }
 #sobre-diptyka {
-	display: grid;
-	min-height: 100vh;
-	height: auto;
+    display: grid;
+    min-height: 100vh;
+    height: auto;
     position: relative;
-    text-align: center;
-	align-items: center;
-	align-content: center;
-	gap: 10px;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
     color: #f0e8e5;
     padding-top: 80px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
     background-color: #f25c27;
-	grid-template-columns: auto auto; 
-	grid-template-rows: auto auto;
-	grid-area: 2 / 1 / 3 / 2;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 #titulo-sobredip {
-	grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
 }
 #parrafo-sobredip {
-	grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 3 / 3;
+    color: #000000;
 }
 #sobre-diptyka img {
 	object-fit: cover;
@@ -177,21 +178,21 @@ header {
 
 
 #historia {
-	display: grid;
-	min-height: 100vh;
-	height: auto;
+    display: grid;
+    min-height: 100vh;
+    height: auto;
     position: relative;
-    text-align: center;
-	align-items: center;
-	align-content: center;
-	gap: 10px;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
     color: #f0e8e5;
     padding-top: 80px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
-	grid-template-columns: auto auto; 
-	grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     grid-area: 3 / 1 / 4 / 2;
 }
 #historia #main-historial-img-fondo{
@@ -205,13 +206,15 @@ header {
 	z-index: -1;
 }
 #titulo-historia {
-	grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
 }
 #parrafo-historia {
 	grid-area: 2 / 1 / 3 / 2;
 }
 #img-historia {
 	grid-area: 2 / 2 / 3 / 3;
+	text-align: center;
 }
 #img-historia img {
 	object-fit: cover;
@@ -226,26 +229,27 @@ header {
 
 
 #recursos {
-	display: grid;
-	min-height: 100vh;
-	height: auto;
+    display: grid;
+    min-height: 100vh;
+    height: auto;
     position: relative;
-    text-align: center;
-	align-items: center;
-	align-content: center;
-	gap: 10px;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
     color: #36a4d5;
     padding-top: 80px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
     background-color: #f39daa;
-	grid-template-columns: auto auto; 
-	grid-template-rows: auto auto;
-	grid-area: 4 / 1 / 5 / 2;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-area: 4 / 1 / 5 / 2;
 }
 #titulo-recursos {
-	grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
 }
 #parrafo-recursos {
 	grid-area: 2 / 2 / 3 / 3;
