@@ -128,7 +128,7 @@
     padding-bottom: 40px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    gap: 10px;
+    gap: 20px;
 }
 #proposito #proposito-info h1 {
     text-align: center;
@@ -179,6 +179,7 @@
     background-color: #36a4d5;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+	gap: 20px;
 }
 #titulo-encuentras{
     grid-area: 1 / 1 / 2 / 3;
@@ -203,7 +204,7 @@
     position: relative;
     text-align: left;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     color: #f0e8e5;
     padding-top: 80px;
     padding-right: 20px;
